@@ -431,6 +431,7 @@ try? inverse(0) // No need to catch error
 
 
 //: ### Init with failures
+
 class Thing: NSObject {
     
     let url : NSURL
@@ -448,6 +449,16 @@ class Thing: NSObject {
 }
 
 let t = Thing(urlString: "no url")
+
+
+//: Casts in Swift
+class Thong : Thing{}
+
+let tt = Thing(urlString: "https://www.google.com")
+
+let ttt = tt as? Thong // good mood
+
+//slet tttt = tt as! Thong // by force
 
 
 
