@@ -465,6 +465,7 @@ let ttt = tt as? Thong // good mood
 let n : String? = "Anakin Skywalker"
 let firstName = n?.componentsSeparatedByString(" ")[0]
 print(firstName)
+let length = firstName?.characters.count
 let uppercaseName = firstName?.uppercaseString
 
 let maybeAFloat: Optional<Float> // Without sintactic sugar Float?
