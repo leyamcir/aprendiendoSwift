@@ -431,7 +431,7 @@ try? inverse(0) // No need to catch error
 
 
 //: ### Init with failures
-
+/*
 class Thing: NSObject {
     
     let url : NSURL
@@ -458,7 +458,17 @@ let tt = Thing(urlString: "https://www.google.com")
 
 let ttt = tt as? Thong // good mood
 
-//slet tttt = tt as! Thong // by force
+//let tttt = tt as! Thong // by force
+*/
+
+//: ### Optional Chaining
+let n : String? = "Anakin Skywalker"
+let firstName = n?.componentsSeparatedByString(" ")[0]
+print(firstName)
+let uppercaseName = firstName?.uppercaseString
+
+let maybeAFloat: Optional<Float> // Without sintactic sugar Float?
+
 
 
 
