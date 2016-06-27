@@ -430,6 +430,25 @@ do { // Create new environment
 try? inverse(0) // No need to catch error
 
 
+//: ### Init with failures
+class Thing: NSObject {
+    
+    let url : NSURL
+    
+    init?(urlString: String) {
+        let theUrl = NSURL(string: urlString)
+        if theUrl == nil {
+            // Failed, return nil
+            return nil
+        } else {
+            url = theUrl!
+        }
+        super.init()
+    }
+}
+
+let t = Thing(urlString: "no url")
+
 
 
 
