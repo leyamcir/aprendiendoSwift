@@ -471,9 +471,18 @@ let uppercaseName = firstName?.uppercaseString
 let maybeAFloat: Optional<Float> // Without sintactic sugar Float?
 
 
+// Optional unpack implicit way
+
+var msg : String! = "Hola Swift"
+print(msg)
+// no need of ?: Can be used when there's something in the optional. 
+// Otherwise, app will crash
+msg.uppercaseString
 
 
+var catacrac : Float!
+//print(catacrac) // A fregar
 
-
+// USE: When you want the app to crash if something fails. Used in tests
 
 
