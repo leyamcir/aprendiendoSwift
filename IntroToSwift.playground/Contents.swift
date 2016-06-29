@@ -486,3 +486,12 @@ var catacrac : Float!
 // USE: When you want the app to crash if something fails. Used in tests
 
 
+
+
+//: ###Enums values
+/*
+*   none, as LightSableColor.
+*   homogeneous value, accesesd by rawValue, ssuch as StarWarsAfiliation
+*   Associated types, different in each case. Optional, by example.
+*/
+
